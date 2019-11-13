@@ -601,3 +601,869 @@ Migrating to CreateUsers (20180917121518)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 10:53:41.267584"], ["updated_at", "2019-11-13 10:53:41.267584"]]
   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateUsers (20180917121518)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20180917121518"]]
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+Migrating to CreateUsers (20180917121518)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180917121518_create_users.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer, "address" varchar, "hobby" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180917121518_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180917121518"]]
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kotaro18/.rbenv/versions/2.6.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:12:12.160011"], ["updated_at", "2019-11-13 14:12:12.160011"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.167431"], ["updated_at", "2019-11-13 14:12:12.167431"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.170120"], ["updated_at", "2019-11-13 14:12:12.170120"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.172617"], ["updated_at", "2019-11-13 14:12:12.172617"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.174478"], ["updated_at", "2019-11-13 14:12:12.174478"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.177000"], ["updated_at", "2019-11-13 14:12:12.177000"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.179556"], ["updated_at", "2019-11-13 14:12:12.179556"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.182798"], ["updated_at", "2019-11-13 14:12:12.182798"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.186814"], ["updated_at", "2019-11-13 14:12:12.186814"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.189862"], ["updated_at", "2019-11-13 14:12:12.189862"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.192580"], ["updated_at", "2019-11-13 14:12:12.192580"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.197157"], ["updated_at", "2019-11-13 14:12:12.197157"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.200872"], ["updated_at", "2019-11-13 14:12:12.200872"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.205632"], ["updated_at", "2019-11-13 14:12:12.205632"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.208136"], ["updated_at", "2019-11-13 14:12:12.208136"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.210308"], ["updated_at", "2019-11-13 14:12:12.210308"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.212329"], ["updated_at", "2019-11-13 14:12:12.212329"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.214503"], ["updated_at", "2019-11-13 14:12:12.214503"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.216982"], ["updated_at", "2019-11-13 14:12:12.216982"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.219776"], ["updated_at", "2019-11-13 14:12:12.219776"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.223516"], ["updated_at", "2019-11-13 14:12:12.223516"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.226264"], ["updated_at", "2019-11-13 14:12:12.226264"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.228437"], ["updated_at", "2019-11-13 14:12:12.228437"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.230292"], ["updated_at", "2019-11-13 14:12:12.230292"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.232566"], ["updated_at", "2019-11-13 14:12:12.232566"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.235314"], ["updated_at", "2019-11-13 14:12:12.235314"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.240851"], ["updated_at", "2019-11-13 14:12:12.240851"]]
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.249522"], ["updated_at", "2019-11-13 14:12:12.249522"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.254996"], ["updated_at", "2019-11-13 14:12:12.254996"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.262042"], ["updated_at", "2019-11-13 14:12:12.262042"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.268081"], ["updated_at", "2019-11-13 14:12:12.268081"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.272671"], ["updated_at", "2019-11-13 14:12:12.272671"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.275032"], ["updated_at", "2019-11-13 14:12:12.275032"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.278727"], ["updated_at", "2019-11-13 14:12:12.278727"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.280775"], ["updated_at", "2019-11-13 14:12:12.280775"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.287541"], ["updated_at", "2019-11-13 14:12:12.287541"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.292466"], ["updated_at", "2019-11-13 14:12:12.292466"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.295640"], ["updated_at", "2019-11-13 14:12:12.295640"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.298652"], ["updated_at", "2019-11-13 14:12:12.298652"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.300457"], ["updated_at", "2019-11-13 14:12:12.300457"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.302375"], ["updated_at", "2019-11-13 14:12:12.302375"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.304950"], ["updated_at", "2019-11-13 14:12:12.304950"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.307667"], ["updated_at", "2019-11-13 14:12:12.307667"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.309844"], ["updated_at", "2019-11-13 14:12:12.309844"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.311863"], ["updated_at", "2019-11-13 14:12:12.311863"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.313967"], ["updated_at", "2019-11-13 14:12:12.313967"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.315925"], ["updated_at", "2019-11-13 14:12:12.315925"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.317754"], ["updated_at", "2019-11-13 14:12:12.317754"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.319387"], ["updated_at", "2019-11-13 14:12:12.319387"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.321073"], ["updated_at", "2019-11-13 14:12:12.321073"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.322897"], ["updated_at", "2019-11-13 14:12:12.322897"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.324770"], ["updated_at", "2019-11-13 14:12:12.324770"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.326552"], ["updated_at", "2019-11-13 14:12:12.326552"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.328867"], ["updated_at", "2019-11-13 14:12:12.328867"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.331703"], ["updated_at", "2019-11-13 14:12:12.331703"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.333645"], ["updated_at", "2019-11-13 14:12:12.333645"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.335766"], ["updated_at", "2019-11-13 14:12:12.335766"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.337985"], ["updated_at", "2019-11-13 14:12:12.337985"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.340299"], ["updated_at", "2019-11-13 14:12:12.340299"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.343188"], ["updated_at", "2019-11-13 14:12:12.343188"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.345615"], ["updated_at", "2019-11-13 14:12:12.345615"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.350075"], ["updated_at", "2019-11-13 14:12:12.350075"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.353619"], ["updated_at", "2019-11-13 14:12:12.353619"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.358841"], ["updated_at", "2019-11-13 14:12:12.358841"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.361565"], ["updated_at", "2019-11-13 14:12:12.361565"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.372560"], ["updated_at", "2019-11-13 14:12:12.372560"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.375819"], ["updated_at", "2019-11-13 14:12:12.375819"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.378435"], ["updated_at", "2019-11-13 14:12:12.378435"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.382210"], ["updated_at", "2019-11-13 14:12:12.382210"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.385485"], ["updated_at", "2019-11-13 14:12:12.385485"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.389200"], ["updated_at", "2019-11-13 14:12:12.389200"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.391377"], ["updated_at", "2019-11-13 14:12:12.391377"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.393237"], ["updated_at", "2019-11-13 14:12:12.393237"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.396065"], ["updated_at", "2019-11-13 14:12:12.396065"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.398179"], ["updated_at", "2019-11-13 14:12:12.398179"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.400061"], ["updated_at", "2019-11-13 14:12:12.400061"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.401747"], ["updated_at", "2019-11-13 14:12:12.401747"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.403512"], ["updated_at", "2019-11-13 14:12:12.403512"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.405443"], ["updated_at", "2019-11-13 14:12:12.405443"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.407644"], ["updated_at", "2019-11-13 14:12:12.407644"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.410008"], ["updated_at", "2019-11-13 14:12:12.410008"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.412735"], ["updated_at", "2019-11-13 14:12:12.412735"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.414695"], ["updated_at", "2019-11-13 14:12:12.414695"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.416814"], ["updated_at", "2019-11-13 14:12:12.416814"]]
+  [1m[35m (20.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (4.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.438982"], ["updated_at", "2019-11-13 14:12:12.438982"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.448950"], ["updated_at", "2019-11-13 14:12:12.448950"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.450964"], ["updated_at", "2019-11-13 14:12:12.450964"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.452833"], ["updated_at", "2019-11-13 14:12:12.452833"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.454901"], ["updated_at", "2019-11-13 14:12:12.454901"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.456980"], ["updated_at", "2019-11-13 14:12:12.456980"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.458997"], ["updated_at", "2019-11-13 14:12:12.458997"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.460958"], ["updated_at", "2019-11-13 14:12:12.460958"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.463131"], ["updated_at", "2019-11-13 14:12:12.463131"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.464990"], ["updated_at", "2019-11-13 14:12:12.464990"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.466609"], ["updated_at", "2019-11-13 14:12:12.466609"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.468259"], ["updated_at", "2019-11-13 14:12:12.468259"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.469943"], ["updated_at", "2019-11-13 14:12:12.469943"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.471603"], ["updated_at", "2019-11-13 14:12:12.471603"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.473207"], ["updated_at", "2019-11-13 14:12:12.473207"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.474848"], ["updated_at", "2019-11-13 14:12:12.474848"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.476601"], ["updated_at", "2019-11-13 14:12:12.476601"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.478783"], ["updated_at", "2019-11-13 14:12:12.478783"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.481006"], ["updated_at", "2019-11-13 14:12:12.481006"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.483109"], ["updated_at", "2019-11-13 14:12:12.483109"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.486045"], ["updated_at", "2019-11-13 14:12:12.486045"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.487713"], ["updated_at", "2019-11-13 14:12:12.487713"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.489359"], ["updated_at", "2019-11-13 14:12:12.489359"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.491074"], ["updated_at", "2019-11-13 14:12:12.491074"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.492792"], ["updated_at", "2019-11-13 14:12:12.492792"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.494386"], ["updated_at", "2019-11-13 14:12:12.494386"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.497182"], ["updated_at", "2019-11-13 14:12:12.497182"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.499384"], ["updated_at", "2019-11-13 14:12:12.499384"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.504163"], ["updated_at", "2019-11-13 14:12:12.504163"]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.521044"], ["updated_at", "2019-11-13 14:12:12.521044"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.523767"], ["updated_at", "2019-11-13 14:12:12.523767"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.539352"], ["updated_at", "2019-11-13 14:12:12.539352"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.541260"], ["updated_at", "2019-11-13 14:12:12.541260"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.560537"], ["updated_at", "2019-11-13 14:12:12.560537"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.564127"], ["updated_at", "2019-11-13 14:12:12.564127"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.566175"], ["updated_at", "2019-11-13 14:12:12.566175"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.567769"], ["updated_at", "2019-11-13 14:12:12.567769"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.569477"], ["updated_at", "2019-11-13 14:12:12.569477"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.571018"], ["updated_at", "2019-11-13 14:12:12.571018"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.572698"], ["updated_at", "2019-11-13 14:12:12.572698"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.574298"], ["updated_at", "2019-11-13 14:12:12.574298"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.575885"], ["updated_at", "2019-11-13 14:12:12.575885"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.577457"], ["updated_at", "2019-11-13 14:12:12.577457"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.579129"], ["updated_at", "2019-11-13 14:12:12.579129"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.581623"], ["updated_at", "2019-11-13 14:12:12.581623"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.584029"], ["updated_at", "2019-11-13 14:12:12.584029"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.586624"], ["updated_at", "2019-11-13 14:12:12.586624"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.588665"], ["updated_at", "2019-11-13 14:12:12.588665"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.591037"], ["updated_at", "2019-11-13 14:12:12.591037"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.593600"], ["updated_at", "2019-11-13 14:12:12.593600"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.599130"], ["updated_at", "2019-11-13 14:12:12.599130"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.601151"], ["updated_at", "2019-11-13 14:12:12.601151"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.604394"], ["updated_at", "2019-11-13 14:12:12.604394"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.606532"], ["updated_at", "2019-11-13 14:12:12.606532"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.609364"], ["updated_at", "2019-11-13 14:12:12.609364"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.611561"], ["updated_at", "2019-11-13 14:12:12.611561"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.613845"], ["updated_at", "2019-11-13 14:12:12.613845"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.615897"], ["updated_at", "2019-11-13 14:12:12.615897"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.617778"], ["updated_at", "2019-11-13 14:12:12.617778"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.619282"], ["updated_at", "2019-11-13 14:12:12.619282"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.620816"], ["updated_at", "2019-11-13 14:12:12.620816"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.622337"], ["updated_at", "2019-11-13 14:12:12.622337"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.624003"], ["updated_at", "2019-11-13 14:12:12.624003"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.625714"], ["updated_at", "2019-11-13 14:12:12.625714"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.627328"], ["updated_at", "2019-11-13 14:12:12.627328"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.646266"], ["updated_at", "2019-11-13 14:12:12.646266"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.648919"], ["updated_at", "2019-11-13 14:12:12.648919"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.650718"], ["updated_at", "2019-11-13 14:12:12.650718"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.653684"], ["updated_at", "2019-11-13 14:12:12.653684"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.657174"], ["updated_at", "2019-11-13 14:12:12.657174"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.662314"], ["updated_at", "2019-11-13 14:12:12.662314"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.665045"], ["updated_at", "2019-11-13 14:12:12.665045"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.667645"], ["updated_at", "2019-11-13 14:12:12.667645"]]
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.674078"], ["updated_at", "2019-11-13 14:12:12.674078"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.675591"], ["updated_at", "2019-11-13 14:12:12.675591"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.677133"], ["updated_at", "2019-11-13 14:12:12.677133"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.678980"], ["updated_at", "2019-11-13 14:12:12.678980"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.681318"], ["updated_at", "2019-11-13 14:12:12.681318"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.684201"], ["updated_at", "2019-11-13 14:12:12.684201"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["created_at", "2019-11-13 14:12:12.687896"], ["updated_at", "2019-11-13 14:12:12.687896"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.494385"], ["updated_at", "2019-11-13 14:13:10.494385"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.498814"], ["updated_at", "2019-11-13 14:13:10.498814"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.501765"], ["updated_at", "2019-11-13 14:13:10.501765"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.504225"], ["updated_at", "2019-11-13 14:13:10.504225"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.508687"], ["updated_at", "2019-11-13 14:13:10.508687"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.511076"], ["updated_at", "2019-11-13 14:13:10.511076"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.513085"], ["updated_at", "2019-11-13 14:13:10.513085"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.515437"], ["updated_at", "2019-11-13 14:13:10.515437"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.519980"], ["updated_at", "2019-11-13 14:13:10.519980"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (4.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.524876"], ["updated_at", "2019-11-13 14:13:10.524876"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.534298"], ["updated_at", "2019-11-13 14:13:10.534298"]]
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.545267"], ["updated_at", "2019-11-13 14:13:10.545267"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.551566"], ["updated_at", "2019-11-13 14:13:10.551566"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.557747"], ["updated_at", "2019-11-13 14:13:10.557747"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.561737"], ["updated_at", "2019-11-13 14:13:10.561737"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.564583"], ["updated_at", "2019-11-13 14:13:10.564583"]]
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.570205"], ["updated_at", "2019-11-13 14:13:10.570205"]]
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.584161"], ["updated_at", "2019-11-13 14:13:10.584161"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.587576"], ["updated_at", "2019-11-13 14:13:10.587576"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.590385"], ["updated_at", "2019-11-13 14:13:10.590385"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.593517"], ["updated_at", "2019-11-13 14:13:10.593517"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.596468"], ["updated_at", "2019-11-13 14:13:10.596468"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.599808"], ["updated_at", "2019-11-13 14:13:10.599808"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.603673"], ["updated_at", "2019-11-13 14:13:10.603673"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.607716"], ["updated_at", "2019-11-13 14:13:10.607716"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.610485"], ["updated_at", "2019-11-13 14:13:10.610485"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.612899"], ["updated_at", "2019-11-13 14:13:10.612899"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.615333"], ["updated_at", "2019-11-13 14:13:10.615333"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.619891"], ["updated_at", "2019-11-13 14:13:10.619891"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.622704"], ["updated_at", "2019-11-13 14:13:10.622704"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.626631"], ["updated_at", "2019-11-13 14:13:10.626631"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.629120"], ["updated_at", "2019-11-13 14:13:10.629120"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.631417"], ["updated_at", "2019-11-13 14:13:10.631417"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.633829"], ["updated_at", "2019-11-13 14:13:10.633829"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.636369"], ["updated_at", "2019-11-13 14:13:10.636369"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.640155"], ["updated_at", "2019-11-13 14:13:10.640155"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.642829"], ["updated_at", "2019-11-13 14:13:10.642829"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.644789"], ["updated_at", "2019-11-13 14:13:10.644789"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.646734"], ["updated_at", "2019-11-13 14:13:10.646734"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.649191"], ["updated_at", "2019-11-13 14:13:10.649191"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.650977"], ["updated_at", "2019-11-13 14:13:10.650977"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.652770"], ["updated_at", "2019-11-13 14:13:10.652770"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.655653"], ["updated_at", "2019-11-13 14:13:10.655653"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.657288"], ["updated_at", "2019-11-13 14:13:10.657288"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.659161"], ["updated_at", "2019-11-13 14:13:10.659161"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.661751"], ["updated_at", "2019-11-13 14:13:10.661751"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (7.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.665323"], ["updated_at", "2019-11-13 14:13:10.665323"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.674206"], ["updated_at", "2019-11-13 14:13:10.674206"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.675892"], ["updated_at", "2019-11-13 14:13:10.675892"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.678103"], ["updated_at", "2019-11-13 14:13:10.678103"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.679666"], ["updated_at", "2019-11-13 14:13:10.679666"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.681375"], ["updated_at", "2019-11-13 14:13:10.681375"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.683476"], ["updated_at", "2019-11-13 14:13:10.683476"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.685706"], ["updated_at", "2019-11-13 14:13:10.685706"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.688146"], ["updated_at", "2019-11-13 14:13:10.688146"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.690054"], ["updated_at", "2019-11-13 14:13:10.690054"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.692255"], ["updated_at", "2019-11-13 14:13:10.692255"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.694359"], ["updated_at", "2019-11-13 14:13:10.694359"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.696117"], ["updated_at", "2019-11-13 14:13:10.696117"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.698015"], ["updated_at", "2019-11-13 14:13:10.698015"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.699736"], ["updated_at", "2019-11-13 14:13:10.699736"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.701675"], ["updated_at", "2019-11-13 14:13:10.701675"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.703938"], ["updated_at", "2019-11-13 14:13:10.703938"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.706532"], ["updated_at", "2019-11-13 14:13:10.706532"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.709056"], ["updated_at", "2019-11-13 14:13:10.709056"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.711175"], ["updated_at", "2019-11-13 14:13:10.711175"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.713150"], ["updated_at", "2019-11-13 14:13:10.713150"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.714964"], ["updated_at", "2019-11-13 14:13:10.714964"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.717129"], ["updated_at", "2019-11-13 14:13:10.717129"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.719179"], ["updated_at", "2019-11-13 14:13:10.719179"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.721557"], ["updated_at", "2019-11-13 14:13:10.721557"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.723674"], ["updated_at", "2019-11-13 14:13:10.723674"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.725567"], ["updated_at", "2019-11-13 14:13:10.725567"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.728584"], ["updated_at", "2019-11-13 14:13:10.728584"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.731142"], ["updated_at", "2019-11-13 14:13:10.731142"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.733179"], ["updated_at", "2019-11-13 14:13:10.733179"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.735079"], ["updated_at", "2019-11-13 14:13:10.735079"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.736983"], ["updated_at", "2019-11-13 14:13:10.736983"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.739010"], ["updated_at", "2019-11-13 14:13:10.739010"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.740663"], ["updated_at", "2019-11-13 14:13:10.740663"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.743182"], ["updated_at", "2019-11-13 14:13:10.743182"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.746902"], ["updated_at", "2019-11-13 14:13:10.746902"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.751149"], ["updated_at", "2019-11-13 14:13:10.751149"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.756027"], ["updated_at", "2019-11-13 14:13:10.756027"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.757689"], ["updated_at", "2019-11-13 14:13:10.757689"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.759385"], ["updated_at", "2019-11-13 14:13:10.759385"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.760981"], ["updated_at", "2019-11-13 14:13:10.760981"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.762629"], ["updated_at", "2019-11-13 14:13:10.762629"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.764408"], ["updated_at", "2019-11-13 14:13:10.764408"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.765910"], ["updated_at", "2019-11-13 14:13:10.765910"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.767387"], ["updated_at", "2019-11-13 14:13:10.767387"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.769169"], ["updated_at", "2019-11-13 14:13:10.769169"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.771531"], ["updated_at", "2019-11-13 14:13:10.771531"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.773447"], ["updated_at", "2019-11-13 14:13:10.773447"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (6.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.781142"], ["updated_at", "2019-11-13 14:13:10.781142"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (33.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.789668"], ["updated_at", "2019-11-13 14:13:10.789668"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.825504"], ["updated_at", "2019-11-13 14:13:10.825504"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.831030"], ["updated_at", "2019-11-13 14:13:10.831030"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.832762"], ["updated_at", "2019-11-13 14:13:10.832762"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.834353"], ["updated_at", "2019-11-13 14:13:10.834353"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.836136"], ["updated_at", "2019-11-13 14:13:10.836136"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.838124"], ["updated_at", "2019-11-13 14:13:10.838124"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.839921"], ["updated_at", "2019-11-13 14:13:10.839921"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.841555"], ["updated_at", "2019-11-13 14:13:10.841555"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.843471"], ["updated_at", "2019-11-13 14:13:10.843471"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.846408"], ["updated_at", "2019-11-13 14:13:10.846408"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.849465"], ["updated_at", "2019-11-13 14:13:10.849465"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "address", "hobby", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "田中"], ["age", 33], ["address", "埼玉"], ["hobby", "サッカー"], ["created_at", "2019-11-13 14:13:10.851493"], ["updated_at", "2019-11-13 14:13:10.851493"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
